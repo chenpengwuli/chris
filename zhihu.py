@@ -33,7 +33,7 @@ def login_zhihu(data,url):
 	pages = html.xpath('.//div[@class="feed-content"]') #对于title:content类型的结构，先取到它的Parent div部分，再依取得各文本
 	for page in pages:
 		page = HTML(etree.tostring(page))
-		title = page.xpath('.//a[@class="question_link"]/text()')
+		title = page.xpath('.//h2[@class="feed-title"]/a/text()')
 		content = page.xpath('.//div[@class="zh-summary summary clearfix"]/text()')
 
 		if title:
