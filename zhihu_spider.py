@@ -18,7 +18,7 @@ class ZhihuSpiderSpider(scrapy.Spider):
     	return[
     		FormRequest(
     			"http://www.zhihu.com/login/phone_num",
-    			formdata={"phone_num":"18602701595","password":"cp89112587"},
+    			formdata={"phone_num":"xxx","password":"xxx"},
     			callback=self.afterlogin)
     		]    	
 
