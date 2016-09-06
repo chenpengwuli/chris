@@ -22,6 +22,9 @@ class DamnlolSpider(scrapy.Spider):
             yield Request(url = url_link, dont_filter=True)
 
         yield item
+        ‘’‘ 这里需要注意的是 item link必须得是list形式
+            但是item title 必须是string形式
+        ’‘’
         # print response.xpath('//div[starts-with(@class,"right navigation")]/a/@href')
 # '//div[starts-with(@class,"right navigation")/a[@class="nav right previous"]/]'
 
