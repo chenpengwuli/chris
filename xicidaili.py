@@ -37,4 +37,4 @@ with open(r'C:\Users\Kevin\Desktop\xici.csv','wb') as f:
 
 		time.sleep(0.3)
 
-# indent is 4 not 8
+# indent is 4
