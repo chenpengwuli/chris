@@ -36,4 +36,4 @@ with open(r'C:\Users\Kevin\Desktop\xici.csv','wb') as f:
 		get_page(host + str(i))
 
 		time.sleep(0.3)
-# I have to add something to update this snippet.
+
